@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Cumpleaños José Ucán - 90s Party</title>
+
+    <!-- Meta Tags para Redes Sociales y WhatsApp (Open Graph) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="¡Estás invitado al Cumpleaños de José Ucán! 🎉">
+    <meta property="og:description" content="Alista tu mejor outfit retro y acompáñame a celebrar una noche inolvidable noventera. José Ucán.">
+    <meta property="og:image" content="img/image-meta.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Meta Tags Estándar -->
+    <meta name="description" content="Invitación de Cumpleaños temática Años 90 para José Ucán.">
+    <meta name="theme-color" content="#00f0ff">
+
+    <!-- Favicon / Icono -->
+    <link rel="icon" href="img/image-meta.jpg" type="image/jpeg">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts 90s -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Permanent+Marker&family=Rubik+Glitch&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="modal-open-custom">
+
+    <!-- MODAL PANTALLA COMPLETA ("¿Estás listo?") -->
+    <div id="welcome-modal" class="fullscreen-modal">
+        <div class="modal-card-90s">
+            <i class="fa-solid fa-compact-disc fa-spin fa-3x mb-3" style="color: var(--90s-cyan);"></i>
+            <h2 class="font-marker text-warning fs-1 mb-3">¿ESTÁS LISTO?</h2>
+            <p class="mb-4 text-white">Prepárate para viajar en el tiempo a los <strong>Años 90</strong>.</p>
+            <button id="btn-continue" class="btn btn-90s-primary fs-5 w-100">
+                ¡CONTINUAR! <i class="fa-solid fa-forward ms-1"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- CONTENEDOR TIPO SMARTPHONE EN ESCRITORIO -->
+    <div class="mobile-container">
+
+        <!-- SECCIÓN 1: PRESENTACIÓN VISTA COMPLETA Y ZOOM IN -->
+        <section class="hero-section" id="hero">
+            <div class="memphis-shape" style="top: 10%; left: 5%;">
+                <i class="fa-solid fa-shapes fa-2x text-warning"></i>
+            </div>
+            <div class="memphis-shape" style="bottom: 15%; right: 5%;">
+                <i class="fa-solid fa-bolt fa-2x" style="color: var(--90s-pink);"></i>
+            </div>
+
+            <p class="font-pixel text-info small mb-2">&gt;&gt;&gt; BIENVENIDO A LA FIESTA &lt;&lt;&lt;</p>
+            <h1 class="font-marker text-warning display-4 mb-0" style="text-shadow: 4px 4px 0px var(--90s-pink);">
+                CUMPLEAÑOS
+            </h1>
+            <h2 class="font-glitch display-3 text-white mb-3" style="color: var(--90s-cyan) !important; font-size: 85px;">
+                JOSÉ UCÁN
+            </h2>
+            <span class="badge bg-danger font-pixel fs-6 px-3 py-2 border border-warning shadow mb-4">
+                EDICIÓN RETRO 90S
+            </span>
+
+            <div class="mt-4 animate-bounce">
+                <p class="text-secondary small mb-1">Desliza hacia abajo</p>
+                <i class="fa-solid fa-chevron-down text-warning fa-bounce"></i>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: FRASE DE BIENVENIDA -->
+        <section class="p-4 mb-4">
+            <div class="card-90s pt-5 pb-5 p-4 text-center">
+                <i class="fa-solid fa-quote-left text-warning fs-2 mb-2"></i>
+                <p class="font-marker text-white mb-2" style="font-size: 35px !important; line-height: 38px;">
+                    "Los 90s no han muerto... ¡sólo se mudaron a mi fiesta!"
+                </p>
+                <p class="small text-info mb-0">
+                    Saca tu mejor outfit noventero, alista la vibra retro y acompáñame a celebrar este día especial.
+                </p>
+            </div>
+        </section>
+
+        <!-- ESPACIO IMAGEN 1 -->
+        <section class="px-4 py-2 mb-4">
+            <div class="image-placeholder-box">
+                <!-- REEMPLAZA EL SRC POR TU IMAGEN REAL -->
+                <img src="img/foto1.jpg" alt="Foto 1">
+                <!-- <i class="fa-regular fa-image fa-2x mb-2"></i>
+                <span class="font-pixel small">[ AGREGA TU IMAGEN O GIF 1 AQUÍ ]</span>
+                <span class="small opacity-75 mt-1">(Fotos de infancia noventera, cassettes, etc)</span> -->
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: MI CUMPLEAÑOS JOSÉ UCÁN -->
+        <section class="p-4 mb-4">
+            <div class="card-90s-cyan pt-5 pb-5 p-4 text-center">
+                <h3 class="font-marker text-warning fs-2 mb-2">MI CUMPLEAÑOS</h3>
+                <h2 class="font-pixel text-white mb-3" style="font-size: 60px;">JOSÉ UCÁN</h2>
+                <p class="mb-0 text-white">
+                    Te espero para recordar los mejores momentos, la mejor música y disfrutar una noche inolvidable.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: CONTEO REGRESIVO -->
+        <section class="p-4 mb-4 text-center">
+            <h3 class="font-marker text-warning fs-3 mb-3">
+                <i class="fa-solid fa-stopwatch me-2"></i>CUENTA REGRESIVA
+            </h3>
+
+            <!-- MENSAJE EXPIRADO (OCULTO POR DEFECTO) -->
+            <div id="party-started-msg" class="d-none card-90s p-4">
+                <h2 class="font-marker text-warning display-6 mb-2">¡HA LLEGADO LA HORA DE LA FIESTA!</h2>
+                <p class="font-pixel text-info mb-0">¡Nos vemos en la pista de baile!</p>
+            </div>
+
+            <!-- CUADROS D/H/M/S -->
+            <div id="countdown-boxes" class="row g-2">
+                <p class="text-white mt-0 mb-0"><i class="fa-solid fa-calendar-days me-2"></i> <strong>28/Octubre/2026</strong></p>
+                <p class="text-white mt-0 mb-2"><i class="fa-solid fa-clock me-2"></i> <strong>8:00 PM</strong></p>
+                <div class="col-3">
+                    <div class="bg-dark border border-warning rounded p-2 pt-4 pb-4">
+                        <div id="days" class="countdown-num font-pixel">00</div>
+                        <div class="countdown-label">Días</div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="bg-dark border border-warning rounded p-2 pt-4 pb-4">
+                        <div id="hours" class="countdown-num font-pixel">00</div>
+                        <div class="countdown-label">Horas</div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="bg-dark border border-warning rounded p-2 pt-4 pb-4">
+                        <div id="minutes" class="countdown-num font-pixel">00</div>
+                        <div class="countdown-label">Min</div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="bg-dark border border-warning rounded p-2 pt-4 pb-4">
+                        <div id="seconds" class="countdown-num font-pixel">00</div>
+                        <div class="countdown-label">Seg</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESPACIO IMAGEN 2 -->
+        <section class="px-4 mb-4 py-2">
+            <div class="image-placeholder-box">
+                <img src="img/foto2.jpg" alt="Foto 2">
+                <!-- <i class="fa-regular fa-image fa-2x mb-2"></i>
+                <span class="font-pixel small">[ AGREGA TU IMAGEN O GIF 2 AQUÍ ]</span> -->
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: ALGO NOVENTERO / DRESS CODE -->
+        <section class="p-4">
+            <div class="card-90s pt-5 pb-5 p-4">
+                <h3 class="font-marker text-info fs-3 mb-3 text-center">
+                    <i class="fa-solid fa-gamepad me-2"></i>DRESS CODE 90s
+                </h3>
+                <ul class="list-unstyled text-white mb-0">
+                    <li class="mb-2"><i class="fa-solid fa-check text-warning me-2"></i> Jeans de talle alto / Baggy pants</li>
+                    <li class="mb-2"><i class="fa-solid fa-check text-warning me-2"></i> Camisas neón, estampados coloridos</li>
+                    <li class="mb-2"><i class="fa-solid fa-check text-warning me-2"></i> Tennis retro, gorras o accesorios pop</li>
+                    <li><i class="fa-solid fa-check text-warning me-2"></i> ¡Y toda la actitud para bailar!</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6: DIRECCIÓN GOOGLE MAPS -->
+        <section class="p-4 mb-4 text-center">
+            <h3 class="font-marker text-warning fs-3 mb-3">
+                <i class="fa-solid fa-map-location-dot me-2"></i>UBICACIÓN
+            </h3>
+            <div class="card-90s-cyan pt-5 pb-5 p-4  mb-3">
+                <h5 class="font-pixel text-white fs-6 mb-2">SALÓN DE EVENTOS "Santa Marta"</h5>
+                <p class="small text-info mb-3">Calle 17 118, El Centro, 97830 Halachó, Yuc.</p>
+
+                <div class="ratio ratio-16x9 rounded overflow-hidden mb-3 border border-warning" style="height: 350px;">
+                    <iframe 
+                    id="google-maps-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7475.237146521931!2d-90.08631117563542!3d20.48085357356862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85f8848edd76c6fd%3A0x9aeb806f6f589e07!2sRestaurant%20Bar%20Santa%20Martha!5e0!3m2!1ses-419!2smx!4v1790196177599!5m2!1ses-419!2smx"
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+
+                <a id="google-maps-link" href="https://maps.app.goo.gl/8DJu1v1P8zFBZGUj9" target="_blank" class="btn btn-90s-primary w-100">
+                    <i class="fa-solid fa-diamond-turn-right me-2"></i>ABRIR EN GOOGLE MAPS
+                </a>
+            </div>
+        </section>
+
+        <!-- ESPACIO IMAGEN 3 -->
+        <section class="px-4 mb-4 py-2">
+            <div class="image-placeholder-box">
+                <img src="img/foto3.jpg" alt="Foto 3">
+                <!-- <i class="fa-regular fa-image fa-2x mb-2"></i>
+                <span class="font-pixel small">[ AGREGA TU IMAGEN O GIF 3 AQUÍ ]</span> -->
+            </div>
+        </section>
+
+        <!-- SECCIÓN 7: NO FALTES / RSVP -->
+        <section class="p-4 mb-4 text-center">
+            <div class="card-90s p-4">
+                <h2 class="font-glitch display-5 text-warning mb-2">¡NO FALTES!</h2>
+                <p class="text-white mb-4">Por favor confirma tu asistencia lo antes posible para apartar tu lugar.</p>
+                <a href="https://wa.me/529993898240?text=Hola%20José%20Ucán,%20confirmo%20mi%20asistencia%20a%20tu%20cumpleaños%2090s!" target="_blank" class="btn-90s-whatsapp w-100 fs-5">
+                    <i class="fa-brands fa-whatsapp me-2"></i>CONFIRMAR POR WHATSAPP
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 8: REPRODUCTOR DE CASSETTE 90s -->
+        <section class="p-4 mb-4 text-center">
+            <div class="cassette-box">
+                <div class="d-flex justify-content-between align-items-center mb-2 px-2">
+                    <span style="font-size: 12.5px;" class="font-pixel text-warning small">MIX 90S - SIDE A</span>
+                    <span class="badge bg-danger font-pixel" style="font-size: 0.5rem;">STEREO</span>
+                </div>
+
+                <!-- ANIMACIÓN CASSETERA -->
+                <div class="bg-dark p-3 rounded border border-secondary mb-3 d-flex justify-content-around align-items-center">
+                    <div id="wheel-left" class="cassette-wheel"></div>
+                    <div class="font-marker text-info fs-6">PLAYING 90S HITS</div>
+                    <div id="wheel-right" class="cassette-wheel"></div>
+                </div>
+
+                <!-- CONTROLES DEL REPRODUCTOR -->
+                <div class="d-flex justify-content-center gap-2">
+                    <button id="btn-play-audio" class="btn btn-warning font-pixel text-dark">
+                        <i class="fa-solid fa-play me-1"></i> PLAY
+                    </button>
+                    <button id="btn-pause-audio" class="btn btn-danger font-pixel text-white">
+                        <i class="fa-solid fa-pause me-1"></i> PAUSE
+                    </button>
+                </div>
+
+                <!-- AUDIO MP3 LOCAL CONFIGURABLE -->
+                <audio id="local-mp3-audio" loop>
+                    <source src="mp3/musica-90s.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </section>
+
+        <footer class="text-center p-4 text-secondary small">
+            <p class="font-pixel mb-0" style="font-size: 0.6rem;">&copy;<script>document.write(new Date().getFullYear());</script> | LunitaCreaciones98</p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript Personalizado -->
+    <script src="js/script.js"></script>
+</body>
+</html>

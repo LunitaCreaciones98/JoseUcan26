@@ -1,0 +1,256 @@
+:root {
+    --bg-color: #0d0118;
+    --90s-yellow: #ffee00;
+    --90s-pink: #ff007f;
+    --90s-cyan: #00f0ff;
+    --90s-purple: #8b00ff;
+    --90s-teal: #00ffcc;
+}
+
+/* Bloqueo de Scroll Inicial para el Modal */
+body.modal-open-custom {
+    overflow: hidden !important;
+    height: 100vh;
+}
+
+body {
+    background-color: #05000a;
+    color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedor tipo pantalla de Smartphone en Escritorio */
+.mobile-container {
+    width: 100%;
+    max-width: 480px;
+    background-color: var(--bg-color);
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(255, 0, 127, 0.15) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(0, 240, 255, 0.15) 0%, transparent 20%),
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 20px 20px, 20px 20px;
+    min-height: 100vh;
+    box-shadow: 0 0 50px rgba(0, 240, 255, 0.2), 0 0 30px rgba(255, 0, 127, 0.2);
+    position: relative;
+    overflow-x: hidden;
+    border-left: 1px solid rgba(0, 240, 255, 0.2);
+    border-right: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+/* MODAL PANTALLA COMPLETA ("¿Estás listo?") */
+.fullscreen-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(13, 1, 24, 0.98);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.modal-card-90s {
+    background: linear-gradient(135deg, #1d0036, #00122e);
+    border: 4px solid var(--90s-yellow);
+    box-shadow: 10px 10px 0px var(--90s-pink);
+    border-radius: 20px;
+    padding: 30px 20px;
+    max-width: 380px;
+    width: 90%;
+    animation: modalPulse 2s infinite alternate;
+}
+
+@keyframes modalPulse {
+    0% { transform: scale(0.98); box-shadow: 10px 10px 0px var(--90s-pink); }
+    100% { transform: scale(1.02); box-shadow: 15px 15px 0px var(--90s-cyan); }
+}
+
+/* FUENTES RETRO 90S */
+.font-pixel { font-family: 'Press Start 2P', cursive; }
+.font-marker { font-family: 'Permanent Marker', cursive; }
+.font-glitch { font-family: 'Rubik Glitch', display; }
+
+/* HERO - PRESENTACIÓN ZOOM IN */
+.hero-section {
+    height: 100vh;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    opacity: 0;
+    transform: scale(0.2);
+}
+
+/* Clase activada al dar clic en Continuar */
+.hero-section.start-zoom {
+    animation: zoomInHero 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes zoomInHero {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.memphis-shape {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/* PLACEHOLDERS PARA IMÁGENES */
+.image-placeholder-box {
+    width: 100%;
+    height: 220px;
+    background: #18002e;
+    border: 3px dashed var(--90s-cyan);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--90s-yellow);
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 0px var(--90s-pink);
+}
+
+.image-placeholder-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* TARJETAS CON ESTILO MEMPHIS 90s */
+.card-90s {
+    background: rgba(25, 5, 45, 0.85);
+    border: 3px solid var(--90s-pink);
+    box-shadow: 6px 6px 0px var(--90s-yellow);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+}
+
+.card-90s-cyan {
+    background: rgba(5, 25, 45, 0.85);
+    border: 3px solid var(--90s-cyan);
+    box-shadow: 6px 6px 0px var(--90s-pink);
+    border-radius: 16px;
+}
+
+/* BOTONES 90S */
+.btn-90s-primary {
+    background-color: var(--90s-yellow);
+    color: #000;
+    font-weight: 900;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0px var(--90s-pink);
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn-90s-primary:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--90s-pink);
+}
+
+.btn-90s-whatsapp {
+    background-color: #25D366;
+    color: #fff;
+    font-weight: 800;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0px var(--90s-yellow);
+    padding: 14px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Botón de WhatsApp Deshabilitado */
+.btn-90s-whatsapp.disabled {
+    background-color: #555555 !important;
+    color: #aaaaaa !important;
+    border-color: #333333 !important;
+    box-shadow: none !important;
+    cursor: not-allowed !important;
+    opacity: 0.7;
+}
+
+/* CASSETTE 90S AUDIO */
+.cassette-box {
+    background: #222;
+    border: 4px solid var(--90s-teal);
+    border-radius: 15px;
+    padding: 25px 15px;
+    box-shadow: 8px 8px 0px var(--90s-purple);
+    position: relative;
+}
+
+.cassette-wheel {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #fff;
+    border: 4px solid #000;
+    display: inline-block;
+    position: relative;
+}
+
+.cassette-wheel::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 4px;
+    background: #000;
+    transform: translate(-50%, -50%);
+}
+
+.spinning {
+    animation: spinWheel 1.5s linear infinite;
+}
+
+@keyframes spinWheel {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* CUENTA REGRESIVA */
+.countdown-num {
+    font-size: 1.4rem;
+    color: var(--90s-yellow);
+    font-weight: bold;
+}
+
+.countdown-label {
+    font-size: 0.65rem;
+    color: var(--90s-cyan);
+    text-transform: uppercase;
+}
